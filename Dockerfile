@@ -2,7 +2,7 @@ FROM wordpress:php7.2-fpm-alpine
 
 # Install additional tools.
 RUN echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories && \
-    apk --no-cache add shadow postfix mysql-client zip unzip php7-zip php7-soap zlib-dev libxml2-dev && \
+    apk --no-cache add shadow postfix mysql-client zip unzip php7-zip php7-sockets php7-soap zlib-dev libxml2-dev && \
     docker-php-ext-install zip soap
 
 # Download and install WP-CLI.
