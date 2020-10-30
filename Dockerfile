@@ -1,4 +1,4 @@
-FROM wordpress:php7.3-fpm-alpine
+FROM wordpress:php7.4-fpm-alpine
 
 # Install additional tools.
 RUN echo http://dl-2.alpinelinux.org/alpine/edge/community/ >> /etc/apk/repositories && \
